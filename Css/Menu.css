@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 body {
-    background-color: #918ba9;
+    background-color: #e5ebbf;
     margin: 0%;
     padding: 0%;
     color: #fbf8f8; ;
@@ -8,9 +8,9 @@ body {
     font-size: 20px;
 }
 .all {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    box-shadow: 10px 15px 20px 10px #3a3b3d;
     margin: 45px;
-    background-color: #54583d;
+    background-image: linear-gradient(to bottom, #9c7d3b, rgb(57, 60, 29));
     display: flex;
     overflow: hidden;
 }
@@ -18,26 +18,32 @@ body {
     margin-left: 55px;
 }
 .header img {
+    width: 350px;
+    height: 350px;
     border-radius: 105px;
     margin-top: 365px;
     rotate: -5deg;
     transform: translate(-20%, 0%);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
 }
 .content img{
+    width: 350px;
+    height: 350px;
     border-radius: 105px;
     margin-top: 50px;
     rotate: -5deg;
     transform: translate(120%, 0%);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
 }
 .image {
     margin: 25px;
+    width: 150px;
+    height: 150px;
 }
 .menu {
     display: flex;
     justify-content: space-between;
-    width: 28%;
+    width: 55%;
 }
 .content p {
     margin-top: 75px;
@@ -49,4 +55,23 @@ body {
 .content {
     flex: 91%;
     justify-content: right;
+}
+
+@media (max-width:756px) {
+    .all {
+        margin: 0%;
+        display: block;
+        text-align: center;
+        transition: all 1.3s;
+    }
+    .header img {
+        margin-top: 10px;
+    }
+    .content img {
+        margin-top: 10px;
+        transform: translate(-10%, 0%);
+    }
+    .menu {
+        width: auto;
+    }
 }
